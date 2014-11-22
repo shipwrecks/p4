@@ -15,3 +15,12 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::get('/practice', function() {
+
+    $fruit = Array('Apples', 'Oranges', 'Pears');
+
+    # Here we explicitly include the namespace in our call to the `Pre` class and the `render()` method.
+    echo Paste\Pre::render($fruit,'Fruit');
+
+});
