@@ -13,14 +13,9 @@ class CreateTagsTable extends Migration {
 	public function up()
 	{
 			Schema::create('tags', function($table) {
-				# AI, PK
 				$table->increments('id');
-				# created_at, updated_at columns
 				$table->timestamps();
-				# General data....
 				$table->string('name', 64);
-				# Define foreign keys...
-				# none needed
 				});
 	}
 

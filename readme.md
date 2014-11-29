@@ -25,4 +25,5 @@ No special details on web page use.
 
 ##Outside code
 
-I reused some of the code for users table and tags table from class.
+https://github.com/susanBuck/foobooks/blob/master/app/controllers/UserController.php
+https://github.com/susanBuck/foobooks/blob/master/app/database/migrations/2014_11_07_001312_create_users_table.php

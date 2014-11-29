@@ -1,0 +1,14 @@
+body {
+background-color: #EBEBED;
+padding: 3%;
+text-align: left;
+font-family: calibri, arial, sans-serif;
+}
+
+a:link, a:visited, a:active, a:hover {
+text-decoration:underline;
+}
+
+h2 {
+	color: #E68A00;
+}

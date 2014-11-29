@@ -13,13 +13,10 @@ class CreateTagUserTable extends Migration {
 	public function up()
 	{
 			Schema::create('user_tag', function($table) {
-				# AI, PK
-				# none needed
-				# General data...
 				$table->integer('user_id')->unsigned();
 				$table->integer('tag_id')->unsigned();
-				# Define foreign keys...
-				$table->foreign('user_id')->references('id')->on('users');
+ 
+ 				$table->foreign('user_id')->references('id')->on('users');
 				$table->foreign('tag_id')->references('id')->on('tags');
 				});
 	}
