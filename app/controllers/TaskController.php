@@ -26,14 +26,15 @@ class TaskController extends BaseController
         return Redirect::action('TaskController@getIndex');
     }
 
-    public function getEdit($id)
+    public function getEdit(Task $task)
     {
-        // Show the edit task form.
-        return View::make('task_edit')->with('task', $task);
+        return View::make('task_edit', compact('task'));
     }
 
     public function postEdit()
     {
+        $id = Input::get('task');
+        $task = Task::findOrFail($id);
         $task->task_name = Input::get('task_name');
         $task->notes = Input::get('notes');
         $task->due_date = Input::get('due_date');

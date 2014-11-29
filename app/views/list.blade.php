@@ -17,7 +17,7 @@ Welcome to Your Task List
 			<p><strong>{{ $task['task_name'] }}</strong>, 
 				{{ $task['notes'] }}, 
 				due on {{ $task['due_date'] }}, 
-				done? {{ $task['done'] ? 'Yes' : 'No' }}
+				done? {{ $task['done'] ? 'yes' : 'no' }}
 				<br>
 				<a href="{{ action('TaskController@getEdit', $task->id) }}">Edit</a>
 				or <a href="{{ action('TaskController@getDelete', $task->id) }}">Delete</a> 
