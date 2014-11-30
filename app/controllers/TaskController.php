@@ -28,7 +28,7 @@ class TaskController extends BaseController
 
     public function getEdit(Task $task)
     {
-        return View::make('task_edit', compact('task'));
+        return View::make('task_edit')->with('task', $task);
     }
 
     public function postEdit()
@@ -46,7 +46,7 @@ class TaskController extends BaseController
 
     public function getDelete(Task $task)
     {
-        return View::make('task_delete', compact ('task'));
+        return View::make('task_delete')->with('task', $task);
     }
 
     public function postDelete()
@@ -58,4 +58,9 @@ class TaskController extends BaseController
         return Redirect::action('TaskController@getIndex')
         ->with('flash_message', 'task deleted');
     }
+
+    //public static function search($query) {
+    //    $tasks = Task::get();
+    //    return $tasks;
+    //}
 }
