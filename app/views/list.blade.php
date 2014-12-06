@@ -14,8 +14,8 @@ Welcome to Your Task List
 
 	@else
 		@foreach ($tasks as $task)
-			<p><strong>{{ $task['task_name'] }}</strong>, 
-				{{ $task['notes'] }}, 
+			<p><strong>{{ $task['task_name'] }}</strong>, <br>
+				{{ $task['notes'] }}, <br>
 				due on {{ $task['due_date'] }}, 
 				done? {{ $task['done'] ? 'yes' : 'no' }}
 				<br>

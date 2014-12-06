@@ -18,6 +18,7 @@ class TaskController extends BaseController
     {
         $rules = array(
         'task_name' => 'required',
+        'notes' => 'required',
         'due_date' => 'required|date',
         );
 

@@ -12,7 +12,7 @@ Add a new task
 {{ Form::label('task_name','Task Name') }} (required)
 {{ Form::text('task_name'); }}
 <br>
-{{ Form::label('notes', 'Notes') }} (optional)
+{{ Form::label('notes', 'Notes') }} (required)
 {{ Form::text('notes'); }}
 <br>
 {{ Form::label('due_date','Due Date (YYYY-MM-DD)') }} (required)
