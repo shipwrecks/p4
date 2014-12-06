@@ -10,7 +10,7 @@
 @section('content')
 	<h1>Edit task called {{ $task->task_name }}?</h1>
 
-   {{ Form::open(array('action' => array('TaskController@postEdit', $user->id))) }}
+   {{ Form::open(array('action' => array('TaskController@getEdit', $task->id))) }}
 		<div class='form-group'>
 		{{ Form::label('task_name','task name') }}
 		{{ Form::text('task_name',$task['task_name']); }}

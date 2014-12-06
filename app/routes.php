@@ -61,7 +61,7 @@ Route::get('/debug', function() {
 
 });
 
-Route::model('task', 'Task');
+//Route::model('task', 'Task');
 Route::get('/signup','UserController@getSignup' );
 Route::get('/login', 'UserController@getLogin' );
 Route::post('/signup', 'UserController@postSignup' );
@@ -72,6 +72,8 @@ Route::get('/list', 'TaskController@getIndex');
 Route::get('/create', 'TaskController@getCreate');
 Route::post('/create', 'TaskController@postCreate');
 Route::get('/edit/{task}', 'TaskController@getEdit');
-Route::post('/edit', 'TaskController@postEdit');
+Route::post('/edit/{task_id}', 'TaskController@postEdit');
 Route::get('/delete/{task}', 'TaskController@getDelete');
-Route::post('/delete', 'TaskController@postDelete');
+Route::post('/delete/{task_id}', 'TaskController@postDelete');
+Route::get('/done', 'TaskController@getDone');
+Route::get('/not_done', 'TaskController@getNotDone');

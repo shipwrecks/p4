@@ -22,6 +22,8 @@
 			@if(Auth::check())
 			<li><a href='/logout'>Log out</a></li>
 			<li><a href='/list'>Your Task List</a></li>
+			<li><a href='/done'>Completed Tasks</a></li>
+			<li><a href='/not_done'>Pending Tasks</a></li>
 			<li><a href='/create'>Add a Task</a></li>
 
 			@else
