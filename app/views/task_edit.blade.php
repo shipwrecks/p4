@@ -12,15 +12,15 @@
 
    {{ Form::open(array('action' => array('TaskController@getEdit', $task->id))) }}
 		<div class='form-group'>
-		{{ Form::label('task_name','task name') }}
+		{{ Form::label('task_name','Task name') }} (required)
 		{{ Form::text('task_name',$task['task_name']); }}
 		</div>
 		<div class='form-group'>
-		{{ Form::label('notes','notes') }}
+		{{ Form::label('notes','Notes') }} (optional)
 		{{ Form::text('notes',$task['notes']); }}
 		</div>
 		<div class='form-group'>
-		{{ Form::label('due_date','due date') }}
+		{{ Form::label('due_date','Due date') }} (required)
 		{{ Form::text('due_date',$task['due_date']); }}
 		</div>
 		<div class='form-group'>

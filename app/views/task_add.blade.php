@@ -9,13 +9,13 @@ Add a new task
 
 {{ Form::open(array('url' => '/create')) }}
 
-{{ Form::label('task_name','Task Name') }} (required)
+{{ Form::label('task_name','Task Name') }}  (required)
 {{ Form::text('task_name'); }}
 <br>
-{{ Form::label('notes', 'Notes') }} (required)
+{{ Form::label('notes', 'Notes') }}  (optional)
 {{ Form::text('notes'); }}
 <br>
-{{ Form::label('due_date','Due Date (YYYY-MM-DD)') }} (required)
+{{ Form::label('due_date','Due Date (YYYY-MM-DD)') }}   (required)
 {{ Form::text('due_date'); }}
 <br>
 {{ Form::label('done', 'Done?') }}
