@@ -16,14 +16,27 @@ class TaskController extends BaseController
 
     public function postCreate()
     {
+        $rules = array(
+        'task_name' => 'required',
+        'due_date' => 'required|date',
+        );
+
+        $validator = Validator::make(Input::all(), $rules);
+        if($validator->fails()) {
+        return Redirect::to('/create')
+        ->with('flash_message', 'Task creation failed.')
+        ->withInput()
+        ->withErrors($validator);
+        }
+
         $task = new Task();
         $task->task_name = Input::get('task_name');
         $task->notes = Input::get('notes');
         $task->due_date = Input::get('due_date');
         $task->done = Input::has('done');
-        $task->user_id = Auth::user()->getId();;
-        $task->save();    
-        return Redirect::action('TaskController@getIndex');
+        $task->user_id = Auth::user()->getId();
+        $task->save(); 
+        return Redirect::action('TaskController@getIndex'); 
     }
 
     public function getEdit(Task $task)
