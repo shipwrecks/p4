@@ -45,7 +45,7 @@ class TaskController extends BaseController
             $task = Task::findOrFail($task_id);
         }
         catch(Exception $e) {
-            return Redirect::to('/list')->with('flash_message', 'Task not found');
+            return Redirect::to('/list')->with('flash_message', 'Task not found, try again.');
         }
         return View::make('task_edit')->with('task', $task); 
     }
@@ -56,13 +56,13 @@ class TaskController extends BaseController
             $task = Task::findOrFail($task_id);
         }
         catch(Exception $e) {
-            return Redirect::to('/list')->with('flash_message', 'Task not found');
+            return Redirect::to('/list')->with('flash_message', 'Task not found, try again.');
         }
         $task->task_name = Input::get('task_name');
         $task->notes = Input::get('notes');
         $task->due_date = Input::get('due_date');
         $task->done = Input::has('done');
-        $task->user_id = Auth::user()->getId();;
+        $task->user_id = Auth::user()->getId();
         $task->save();  
         return Redirect::action('TaskController@getIndex');
     }
@@ -73,7 +73,7 @@ class TaskController extends BaseController
             $task = Task::findOrFail($task_id);
         }
         catch(Exception $e) {
-            return Redirect::to('/list')->with('flash_message', 'Task not found');
+            return Redirect::to('/list')->with('flash_message', 'Task not found, try again.');
         }
         return View::make('task_delete')->with('task', $task);
     }

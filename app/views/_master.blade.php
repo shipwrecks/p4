@@ -25,6 +25,7 @@
 			<li><a href='/done'>Completed Tasks</a></li>
 			<li><a href='/not_done'>Pending Tasks</a></li>
 			<li><a href='/create'>Add a Task</a></li>
+			<li><a href='/suggestion_box'>Suggestion Box</a></li>
 
 			@else
 			<li><a href='/signup'>Sign up</a> or <a href='/login'>Log in</a></li>

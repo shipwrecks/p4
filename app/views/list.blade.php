@@ -10,11 +10,11 @@ Welcome to Your Task List
 @section('content')
 	<h1>Welcome to Your Task Library</h1>
 	@if ($tasks->isEmpty())
-	<p>There are currently no tasks to view.</p>
+		<p>There are currently no tasks to view.</p>
 
 	@else
 		@foreach ($tasks as $task)
-			<p><strong>{{ $task['task_name'] }}</strong>, <br>
+			<p><strong>{{ $task['task_name'] }}</strong>, added on {{ $task['created_at']}}<br>
 				{{ $task['notes'] }} <br>
 				due on {{ $task['due_date'] }}, 
 				done? {{ $task['done'] ? 'yes' : 'no' }}
