@@ -4,8 +4,8 @@ class SuggestionController extends BaseController
 {
     public function getIndex()
     {
-    	$suggestions = Task::all();
-        return View::make('suggestion_index')->with('suggestions', $suggestions);
+    	$suggestions = Suggestion::all();
+        return View::make('suggestion_index')->with('suggestions',$suggestions);
     }
 
     public function getCreate()
