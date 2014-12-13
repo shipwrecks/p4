@@ -8,13 +8,14 @@ Add to the suggestion box
 <h1>Add a new suggestion</h1>
 
 {{ Form::open(array('url' => '/create_suggestion')) }}
-
-{{ Form::label('subject','Subject') }}  (optional)
-{{ Form::text('subject'); }}
-<br>
-{{ Form::label('suggestion_text', 'Suggestion') }}  (required)
-{{ Form::text('suggestion_text'); }}
-<br>
-{{ Form::submit('Add'); }}
+	<div class='form-group'>
+	{{ Form::label('subject','Subject') }}  (optional)
+	{{ Form::text('subject'); }}
+	</div>
+	<div class='form-group'>
+	{{ Form::label('suggestion_text', 'Suggestion') }}  (required)
+	{{ Form::textarea('suggestion_text'); }}
+	</div>
+	{{ Form::submit('Add'); }}
 {{ Form::close() }}
 @stop

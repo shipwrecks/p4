@@ -17,16 +17,15 @@
 		</div>
 		<div class='form-group'>
 		{{ Form::label('notes','Notes') }} (optional)
-		{{ Form::text('notes',$task['notes']); }}
+		{{ Form::textarea('notes',$task['notes']); }}
 		</div>
 		<div class='form-group'>
 		{{ Form::label('due_date','Due date') }} (required)
 		{{ Form::text('due_date',$task['due_date']); }}
 		</div>
-		<div class='form-group'>
 		{{ Form::label('done','Done?') }}
 		{{ Form::checkbox('done',$task['value']); }}
-		</div>
+		<br>
 		{{ Form::submit('Save'); }}
 	{{ Form::close() }}
 	<br>

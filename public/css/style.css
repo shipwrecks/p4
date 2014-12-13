@@ -9,6 +9,39 @@ a:link, a:visited, a:active, a:hover {
 text-decoration:underline;
 }
 
-h2 {
-	color: #E68A00;
+.flash-message {
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:#E68A00;
+	text-align:center;
+	padding:10px;
 }
+
+.form-group {
+    padding: 10px 10px 10px 0px;
+    border-radius: 5px;
+}
+
+.form-group input{
+	display: block;
+	width: 200px;
+}
+
+#notes{
+	display: block;
+    width: 400px;
+    max-width: 400px;
+    height: 150px;
+    line-height: 150%; 
+}
+
+#suggestion_text{
+	display: block;
+    width: 400px;
+    max-width: 400px;
+    height: 150px;
+    line-height: 150%; 
+}
+
