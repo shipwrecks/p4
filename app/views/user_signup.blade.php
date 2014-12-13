@@ -12,11 +12,15 @@ Log in
 @endforeach
 
 {{ Form::open(array('url' => '/signup')) }}
+<div class='form-group'>
 {{ Form::label('email') }}
 {{ Form::text('email') }}
+</div>
+<div class='form-group'>
 {{ Form::label('password') }}
 {{ Form::password('password') }}
 <small>Min 6 characters</small>
+</div>
 {{ Form::submit('Submit') }}
 {{ Form::close() }}
 @stop

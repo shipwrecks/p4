@@ -7,12 +7,14 @@
 @section('content')
 <h1>Log in</h1>
 	{{ Form::open(array('url' => '/login')) }}
+	<div class='form-group'>
 	{{ Form::label('email') }}
 	{{ Form::text('email') }}
-	<br>
+	</div>
+	<div class='form-group'>
 	{{ Form::label('password') }}
 	{{ Form::password('password') }}
-	<br>
+	</div>
 	{{ Form::submit('Submit') }}
 	{{ Form::close() }}
 @stop
