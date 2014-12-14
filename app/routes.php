@@ -36,3 +36,10 @@ Route::get('/suggestion_box', 'SuggestionController@getIndex');
 Route::get('/create_suggestion', 'SuggestionController@getCreate');
 Route::post('/create_suggestion', 'SuggestionController@postCreate');
 
+Route::get('/seedtest', function()
+{
+        $user = new User;
+        $user->email = 'dwa15@dwa15.dwa15';
+        $user->password = Hash::make('dwa15dwa15');
+        $user->save();
+});
