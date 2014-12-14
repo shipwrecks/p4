@@ -24,7 +24,10 @@ I demo'd my project during the 12/13/14 section.
 
 ##Details for teaching team
 
-No special details on web page use.
+As of 12/14/14, I cannot get the application to work correctly on the live server. 
+I suspect that it's having issues with routes via POST method but I am not sure. 
+I thought seeding a user would help (email address = dwa15@dwa15.dwa15; password = dwa15dwa15).  
+It did not.  The application works fine on the local server as proven during section.
 
 ##Outside code
 
