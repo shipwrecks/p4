@@ -11,13 +11,16 @@ This is a simple task manager site that includes:
     User authentication so different users can have their own task lists.
     A page to display all incomplete tasks.
     A page to display all completed tasks.
-    A page to display all tasks with incomplete tasks in bold and completed tasks greyed out.
     A page to add new tasks.
     A page to edit the content of existing tasks.
+    A page to delete a task.
+
+My tables are users table, tasks table, and a suggestions table.
+Users can only see their own tasks, but they can see all submitted suggestions.
 
 ##Demo
 
-I have recorded a Jing cast. 
+I demo'd my project during the 12/13/14 section. 
 
 ##Details for teaching team
 

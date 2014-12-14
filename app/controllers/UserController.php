@@ -1,7 +1,8 @@
 <?php
 class UserController extends BaseController {
  
-	public function __construct() {
+	public function __construct() 
+	{
 		parent::__construct();
 		$this->beforeFilter('guest',
 		array(
