@@ -70,7 +70,7 @@ class TaskController extends BaseController
         $task->done = Input::has('done');
         $task->user_id = Auth::user()->getId();
         $task->save();  
-        return Redirect::action('TaskController@getIndex');
+        return Redirect::action('TaskController@getIndex')->with('flash_message', 'Task added.');
     }
 
     public function getDelete($task_id)

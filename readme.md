@@ -14,6 +14,7 @@ This is a simple task manager site that includes:
     A page to add new tasks.
     A page to edit the content of existing tasks.
     A page to delete a task.
+    A page to add website suggestions.
 
 My tables are users table, tasks table, and a suggestions table.
 Users can only see their own tasks, but they can see all submitted suggestions.
@@ -24,10 +25,9 @@ I demo'd my project during the 12/13/14 section.
 
 ##Details for teaching team
 
-As of 12/14/14, I cannot get the application to work correctly on the live server. 
-I thought seeding a user would help (email address = dwa15@dwa15.dwa15; password = dwa15dwa15).  
-It did not.  The seeded user doesn't work properly because it's lacking the token which means that it
-cannot be routed via POST.  However, the application works fine in the local environment as proven during section.
+I've created two accounts with tasks already in it.  (email = dwa15@dwa15.dwa15; password = dwa15dwa15) 
+(email = asdf@asdf.asdf, password = asdfasdf)  I have not added anything to the suggestion box at this time 
+to demonstrate that the page has a message if no suggestions have been submitted.
 
 ##Outside code
 
