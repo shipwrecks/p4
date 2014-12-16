@@ -25,9 +25,9 @@ I demo'd my project during the 12/13/14 section.
 ##Details for teaching team
 
 As of 12/14/14, I cannot get the application to work correctly on the live server. 
-I suspect that it's having issues with routes via POST method but I am not sure. 
 I thought seeding a user would help (email address = dwa15@dwa15.dwa15; password = dwa15dwa15).  
-It did not.  The application works fine on the local server as proven during section.
+It did not.  The seeded user doesn't work properly because it's lacking the token which means that it
+cannot be routed via POST.  However, the application works fine in the local environment as proven during section.
 
 ##Outside code
 
